@@ -1,16 +1,9 @@
 from reports import ReportSimulator
 
-username = input("Username: @").strip()
-
-try:
-    amount = int(input("Количество виртуальных жалоб: "))
-except ValueError:
-    print("Нужно ввести число.")
-    raise SystemExit
-
-if amount <= 0:
-    print("Количество должно быть больше нуля.")
-    raise SystemExit
+# === НАСТРОЙКИ ===
+username = "test_user"   # username без @
+amount = 100             # количество виртуальных проверок
+# =================
 
 simulator = ReportSimulator(username)
 simulator.run(amount)
