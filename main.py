@@ -1,7 +1,7 @@
 from reports import ReportSimulator
 
 # === НАСТРОЙКИ ===
-username = "test_user"   # username без @
+username = "@gaityi"   # username без @
 amount = 100             # количество виртуальных проверок
 # =================
 
